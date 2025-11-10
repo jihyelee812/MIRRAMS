@@ -1,3 +1,6 @@
+# MIRRAMS
+The presence of missing values often reflects variations in data collection policies, which may shift across time or locations, even when the underlying feature distribution remains stable. Such shifts in the missingness distribution between training and test inputs pose a significant challenge to achieving robust predictive performance. In this study, we propose a novel deep learning framework designed to address this challenge, particularly in the common yet challenging scenario where the test-time dataset is unseen. We begin by introducing a set of mutual information-based conditions, called MI robustness conditions, which guide the prediction model to extract label-relevant information. This promotes robustness against distributional shifts in missingness at test-time. To enforce these conditions, we design simple yet effective loss terms that collectively define our final objective, called MIRRAMS. Importantly, our method does not rely on any specific missingness assumption such as MCAR, MAR, or MNAR, making it applicable to a broad range of scenarios. Furthermore, it can naturally extend to cases where labels are also missing in training data, by generalizing the framework to a semi-supervised learning setting. Extensive experiments across multiple benchmark tabular datasets demonstrate that MIRRAMS consistently outperforms existing state-of-the-art baselines and maintains stable performance under diverse missingness conditions. Moreover, it achieves superior performance even in fully observed settings, highlighting MIRRAMS as a powerful, off-the-shelf framework for generalpurpose tabular learning.
+
 # Run the Experiments
 Set your dataset directory path in `data_open.py`:
 ```python
@@ -44,3 +47,7 @@ These datasets are mainly sourced from:
 * AutoML Benchmark Repository
 
 Supported datasets include: adult, htru2, qsar_bio, and more (see code for full list).
+
+
+# arXiv
+[Click here to try](https://arxiv.org/abs/2507.08280)
